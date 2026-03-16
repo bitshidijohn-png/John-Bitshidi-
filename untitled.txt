@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>John Bitshidi - Éducation & Motivation</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* --- Styles généraux --- */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Roboto', sans-serif; background: #f4f4f9; color: #333; }
+
+    /* --- Header --- */
+    header {
+      background: linear-gradient(135deg, #4a90e2, #357ABD);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header h1 { font-size: 2.5em; margin-bottom: 10px; }
+    header p { font-size: 1.2em; }
+
+    /* --- Navigation --- */
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      background-color: #2c5ca1;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 15px 20px;
+      display: inline-block;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    nav a:hover { background-color: #1f3f7b; }
+
+    /* --- Sections --- */
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      text-align: center;
+      color: #4a90e2;
+      font-size: 2em;
+      margin-bottom: 30px;
+    }
+
+    /* --- Cartes --- */
+    .card {
+      background: white;
+      padding: 25px;
+      margin: 20px 0;
+      border-radius: 15px;
+      box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 20px rgba(0,0,0,0.15);
+    }
+    .card img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+    .card h3 { color: #357ABD; margin-bottom: 10px; }
+    .card p { line-height: 1.6; }
+
+    /* --- Boutons --- */
+    button {
+      background-color: #4a90e2;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background 0.3s;
+      margin-top: 10px;
+    }
+    button:hover { background-color: #357ABD; }
+
+    /* --- Footer --- */
+    footer {
+      text-align: center;
+      padding: 25px 20px;
+      background-color: #2c3e50;
+      color: white;
+      margin-top: 40px;
+    }
+
+    /* --- Responsive --- */
+    @media (max-width: 768px) {
+      header h1 { font-size: 2em; }
+      header p { font-size: 1em; }
+      nav a { padding: 12px 15px; font-size: 0.95em; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>John Bitshidi</h1>
+    <p>Éducation, Conseils & Motivation</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#education">Éducation</a>
+    <a href="#conseils">Conseils</a>
+    <a href="#motivation">Motivation</a>
+  </nav>
+
+  <!-- Section Éducation -->
+  <section id="education">
+    <h2>Éducation</h2>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1581092795369-3c2d5dfdb0c0?fit=crop&w=1000&q=80" alt="Apprendre">
+      <h3>Apprendre chaque jour</h3>
+      <p>L’éducation est la clé du succès. Chaque jour est une opportunité pour apprendre quelque chose de nouveau et se rapprocher de ses objectifs.</p>
+      <button onclick="alert('Continue à apprendre chaque jour !')">Astuce</button>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1584697964154-1113c7d7a1a3?fit=crop&w=1000&q=80" alt="Organisation">
+      <h3>Organisation et planification</h3>
+      <p>Planifie ton temps, organise tes études et définis des objectifs clairs pour avancer efficacement.</p>
+      <button onclick="alert('Planifie tes journées et reste concentré !')">Astuce</button>
+    </div>
+  </section>
+
+  <!-- Section Conseils -->
+  <section id="conseils">
+    <h2>Conseils</h2>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1532619187606-38b9cfb91ecb?fit=crop&w=1000&q=80" alt="Motivation">
+      <h3>Garder la motivation</h3>
+      <p>Entoure-toi de personnes positives, lis des livres inspirants et célèbre chaque petite victoire.</p>
+      <button onclick="alert('Reste motivé chaque jour !')">Astuce</button>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?fit=crop&w=1000&q=80" alt="Bien-être">
+      <h3>Bien-être personnel</h3>
+      <p>Prends soin de ton corps et de ton esprit. Le repos et l’alimentation saine boostent tes performances.</p>
+      <button onclick="alert('Prends soin de toi !')">Astuce</button>
+    </div>
+  </section>
+
+  <!-- Section Motivation -->
+  <section id="motivation">
+    <h2>Motivation</h2>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1515165562835-c7fca6d05d84?fit=crop&w=1000&q=80" alt="Ne jamais abandonner">
+      <h3>Ne jamais abandonner</h3>
+      <p>Les échecs font partie du parcours. L’important est de se relever et continuer à avancer.</p>
+      <button onclick="alert('Tu peux réussir, n’abandonne jamais !')">Astuce</button>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?fit=crop&w=1000&q=80" alt="Objectifs">
+      <h3>Fixe tes objectifs</h3>
+      <p>Définis des objectifs clairs et atteignables. Chaque petit pas te rapproche de ton rêve.</p>
+      <button onclick="alert('Fixe tes objectifs et avance !')">Astuce</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2026 John Bitshidi | Tous droits réservés
+  </footer>
+
+</body>
+</html>
